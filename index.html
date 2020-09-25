@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta name="author" content="Rob Hitt">
+  <meta name="description" content="Tic Tac Toe">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+
+  <div class = "nav-container">
+    <nav>
+        <h1 id = "#logo">
+            <span class = "Freshman">Game</span>
+            <span class = "dash">|</span>
+            <span class = "Hanken">Final Project</span>
+        </h1>
+        <ul>
+            <li><a href = "#home"> Game </a></li>
+            <li><a class = "order" href = "#regulation"> Regulation </a></li>
+        </ul>
+    </nav>
+</div>
+<section class = "home" id="home">
+  <div>
+    <h1 class="header">Tic Tac Toe</h1>
+  </div>
+  <div class="enter-players">
+
+    <form id="player-form">
+      <div class="player-container">
+        <label for="player1"><strong>Player 1</strong></label>
+        <input type="text" placeholder="Masukan nama" name="player1" id="player1" class="input-field" />
+      </div>
+      <div class="player-container">
+        <label for="player2"><strong>Player 2</strong></label>
+        <input type="text" placeholder="Masukan nama" name="player2" id="player2" class="input-field" />
+      </div>
+
+      <input type="submit" class="submit-btn" value="Start" />
+    </form>
+  </div>
+
+  <div class="board__main hide-container">
+    <div class="board___player-turn"></div>
+
+    <div class="board__container">
+      <div class="board__cell">
+        <div class="letter" data-id="0"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="1"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="2"></div>
+      </div>
+
+      <div class="board__cell">
+        <div class="letter" data-id="3"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="4"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="5"></div>
+      </div>
+
+      <div class="board__cell">
+        <div class="letter" data-id="6"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="7"></div>
+      </div>
+      <div class="board__cell">
+        <div class="letter" data-id="8"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reset reset--hidden">
+    <div class="reset__text">
+    </div>
+    <button class="replay-btn" value="replay">
+      <span class="clear-board">Clear Board</span>
+    </button>
+  </div>
+</section>
+<div class = "package-container">
+  <section class="package" id = "regulation">
+      <h2>Iqro' !</h2>
+          <div class="card">
+              <img src="img/c.jpg" alt="">
+              <h4><u>Ayo baca dulu peraturannya...</u></h4>
+              <p>1. Masukan nama kamu dan rivalmu dulu 
+                <br>2. Maksimal cuma bisa 2 orang yang bermain.
+                <br>3. Terdapat 2 tanda 'X' dan 'O', yang duluan mendapatkan 3 tanda sejajar, miring ataupun tegak. Dia pemenangnya!
+                <br>
+                <br> SELAMAT BERMAIN!
+               </p>
+      </div>
+  </section>
+  <img class = "wave" src="img/w.png" alt="">
+</div>
+<footer>
+   <p>&copy; Nadiva Ramadhani - 2020</p>
+</footer>
+</body>
+
+</html>
